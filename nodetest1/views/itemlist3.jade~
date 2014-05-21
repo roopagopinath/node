@@ -1,0 +1,49 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='style.css')
+    a(href="/")= "Back"
+    br
+    h1.
+        List of Products in category 'Books'
+
+    table
+      thead
+        tr
+         td
+          h4. Books
+          table(border="1")
+           thead
+             tr
+               td 
+                b= "Name of Book"
+               td 
+                b= "ISBN"
+               td
+                b= "Price in $"
+               td
+                b= "Type"
+               td
+                b= "Author"
+               td
+                b= "About the book"
+           tbody
+            each user,i in itemlist3
+              if user.name=="Books"
+               tr
+                 td
+                   = user.bookName 
+                 td
+                   = user.ISBN
+                 td
+                   = user.price
+                 td
+                   = user.type
+                 td
+                   = user.author
+                 td
+                   = user.description
+
+
+
+

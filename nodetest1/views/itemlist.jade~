@@ -1,0 +1,77 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='Style.css')
+    a(href="/")= "Back"
+    br
+    h1.
+        List of Products in Category 'Electronics'
+
+    table
+      thead
+        tr
+         td
+          h4. TV
+          table(border="1")
+           thead
+             tr
+               td 
+                b= "Manufacturer"
+               td
+                b= "Price in $"
+               td
+                b= "Type"
+               td
+                b= "Size"
+               td
+                b= "Pixel"
+               td
+                b= "Description"
+           tbody
+            each user,i in itemlist
+              if user.name=="TV"
+               tr
+                 td
+                   = user.brand 
+                 td
+                   = user.price
+                 td
+                   = user.type
+                 td
+                   = user.size
+                 td
+                   = user.pixel
+                 td
+                   = user.description
+
+         td
+         td
+         td
+          h4. Refrigerator 
+          table(border="1")
+           thead
+             tr
+               td 
+                b= "Manufacturer"
+               td
+                b= "Price in $"
+               td
+                b= "Size"
+               td
+                b= "Capacity"
+               td
+                b= "Description"
+           tbody
+            each user,i in itemlist
+              if user.name=="Refrigerator"
+               tr
+                 td
+                   = user.brand 
+                 td
+                   = user.price
+                 td
+                   = user.size
+                 td
+                   = user.capacity
+                 td
+                   = user.description

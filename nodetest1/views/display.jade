@@ -1,0 +1,75 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='Style.css')
+    a(href="/")= "Back to home page"
+    br
+    h1.
+        Products Searched!
+
+    table
+      thead
+        tr
+         td
+          table(border="1")
+           thead
+             tr
+               td 
+                b= "Name"
+               td 
+                b= "brand"
+               td
+                b= "Price in $"
+               td
+                b= "Type"
+               td
+                b= "Size"
+               td
+                b= "Description"
+               td
+                b= "pixel"
+               td
+                b= "Capacity"
+               td
+                b= "Quantity"
+               td
+                b= "Color"
+               td
+                b= "Book Name"
+               td
+                b= "ISBN"
+               td
+                b= "Author"
+           tbody
+            each user,i in search_var
+               tr
+                 td
+                   = user.name 
+                 td
+                   = user.brand
+                 td
+                   = user.price
+                 td
+                   = user.type
+                 td
+                   = user.size
+                 td
+                   = user.description
+                 td
+                   = user.pixel
+                 td
+                   = user.capacity
+                 td
+                   = user.quantity
+                 td
+                   = user.color
+                 td
+                   = user.bookName
+                 td
+                   = user.ISBN
+                 td
+                   = user.author
+
+
+
+

@@ -1,0 +1,114 @@
+j = {name : "TV", brand: "Samsung", price: "500", type: "LCD", size : "32 inches", pixel: "1080p", description: "HDTV, Clear motion rate - 120"}
+k = {name : "TV", brand: "LG", price: "400", type: "LED", size : "40 inches", description: "HDTV Better quality with built-in WiFi"}
+z = {name : "TV", brand: "Samsung", price: "750", size: "43 inches", pixel: "720p"}
+l = {name : "TV", brand: "VIZIO", price: "525", type: "LCD", size : "45 inches", pixel: "720p", description: "HDTV with built-in WiFi"}
+m = {name : "TV", brand: "TCL", price: "400", size : "40 inches", description: "HDTV 60 Hz Refurbished"}
+n = {name : "TV", brand: "LG", price: "600", type: "LED", size : "36 inches", pixel: "1080p", description: "HDTV 2013 model - Refurbished"}
+o = {name : "TV", brand: "Seiki", price: "900", size: "48 inches", description: "4K Ultra HD 120Hz"}
+p = {name : "TV", brand: "VIZIO", price: "1000", type: "LED", size : "62 inches", pixel: "1080p", description: "Ultra HD with built-in WiFi, Skype compatible"}
+q = {name : "TV", brand: "Samsung", price: "1200", type: "LED", size : "58 inches", pixel: "1080p", description: "HDTV 60 Hz"}
+r = {name : "TV", brand: "Samsung", type: "LCD", size : "54 inches", description: "Ultra HD"}
+
+
+db.Item.insert(j)
+db.Item.insert(k)
+db.Item.insert(z)
+db.Item.insert(l)
+db.Item.insert(m)
+db.Item.insert(n)
+db.Item.insert(o)
+db.Item.insert(p)
+db.Item.insert(q)
+db.Item.insert(r)
+
+db.Item.find()
+-------------------------------------------------------------------------------------------------------------------
+
+a1 = {name : "Refrigerator", brand: "LG", price: "800", size: "18.8L x 19.5W x 33.6H inches", capacity: "3.2 cubic feet", description: "Large size, Double door"}
+a2 = {name : "Refrigerator", brand: "GE", price: "1000",size: "18.8L x 19.5W x 33.6H inches", description: "Large size, Single door"}
+a3 = {name : "Refrigerator", brand: "Haier", price: "1000", size: "20.9 x 20.6 x 32.7 inches", capacity: "4.4 cubic feet", description: "Compact Refrigerator with stainless door"}
+a4 = {name : "Refrigerator", brand: "Haier", price: "950", capacity: "3.2 cubic feet", description: "Refrigerator/Freezer - White "}
+a5 = {name : "Refrigerator", brand: "SPT", price: "1000", size: "20.9 x 20.6 x 32.7 inches", capacity: "4.4 cubic feet", description: "2 Door Refrigerator black with platinum finish"}
+a6 = {name : "Refrigerator", brand: "Danby", size: "19.6 x 17.5 x 19.7 inches", capacity: "4.4 cubic feet", description: "Compact Refrigerator black"}
+a7 = {name : "Refrigerator", brand: "Danby", size: "19.6 x 17.5 x 19.7 inches", description: "Compact Refrigerator, automatic defrost, Reversible hinges"}
+a8 = {name : "Refrigerator", brand: "LG", price: "500", size: "18.8L x 19.5W x 33.6H inches", description: "Compact Refrigerator: New"}
+a9 = {name : "Refrigerator", brand: "Midea", price: "400", size: "20.9 x 20.6 x 32.7 inches", capacity: "4.4 cubic feet", description: "Compact Refrigerator: New"}
+a10 = {name : "Refrigerator", brand: "Midea", price: "490",size: "18.8L x 19.5W x 33.6H inches", description: "Compact Refrigerator: New"}
+
+db.Item.insert(a1)
+db.Item.insert(a2)
+db.Item.insert(a3)
+db.Item.insert(a4)
+db.Item.insert(a5)
+db.Item.insert(a6)
+db.Item.insert(a7)
+db.Item.insert(a8)
+db.Item.insert(a9)
+db.Item.insert(a10)
+
+---------------------------------------------------------------------------------------------------------------
+
+b1 = {name : "Nail Polish", brand: "Sally Hansen", price: "12", quantity: "5 Fl Oz / 15 Ml", color: "blue", description: "Quick dry; Fine brush; Long lasting"}
+b2 = {name : "Nail Polish", brand: "Zeva", price: "20", quantity: "5 Fl Oz / 15 Ml", color: "yellow", description: "Summer color: French Manicure"}
+b3 = {name : "Nail Polish", brand: "OPI", price: "22", color: "silver", description: "Soft shades Nail Lacquer"}
+b4 = {name : "Nail Polish", brand: "Sally Hansen", price: "25", color: "Multi color", description: "12 color nail paint set"}
+b5 = {name : "Nail Polish", brand: "ManiPure", price: "15", color: "pink", description: "Non toxic gel nail polish"}
+b6 = {name : "Nail Polish", brand: "ManiPure", price: "15", quantity: "5 Fl Oz / 15 Ml",color: "red", description: "Long lasting formula"}
+b7 = {name : "Nail Polish", brand: "Layla", quantity: "5 Fl Oz / 15 Ml", color: "Pink Chiffon", description: "French Manicure"}
+b8 = {name : "Nail Polish", brand: "Incoco", price: "15", quantity: "10 Fl Oz",color: "Peacock Blue"}
+b9 = {name : "Nail Polish", brand: "deborah lippmann", price: "18", quantity: "1.9 oz",color: "Black", description: "Ceramic effect nail polish"}
+b10 = {name : "Nail Polish", brand: "Zeva", price: "19", quantity: "5 Fl Oz / 15 Ml",color: "cherry red", description: "Creme nail lacquer"}
+
+db.Item.insert(b1)
+db.Item.insert(b2)
+db.Item.insert(b3)
+db.Item.insert(b4)
+db.Item.insert(b5)
+db.Item.insert(b6)
+db.Item.insert(b7)
+db.Item.insert(b8)
+db.Item.insert(b9)
+db.Item.insert(b10)
+
+---------------------------------------------------------------------------------------------------------------
+
+c1 = {name : "Books", bookName: "Capital in the Twenty-First Century", ISBN: "123ABC", price: "24", author: "Thomas Piketty", description: "Dynamics that drive the accumulation and distribution of capital"}
+c2 = {name : "Books", bookName: "The Road", ISBN: "L02IBB", price: "15", author: "Cormac McCarthy", description: "story of a journey - It boldly imagines a future in which no hope remains", type: "Fiction"}
+c3 = {name : "Books", bookName: "Katherine Faw Morris", ISBN: "P998SF", price: "22", author: "Katherine Faw Morris", description: "A yound woman's battles against isolation and victimhood"}
+c4 = {name : "Books", bookName: "Marvel Avengers", ISBN: "99GH7D", price: "9.99", author: " Alan Cowsill", description: "Everything about your favorite Marvel Avengers super heroes and villains", type: "Comic"}
+c5 = {name : "Books", bookName: "Science: The Definitive Visual Guide", ISBN: "11F63H", price: "19.27", author: "Robert Dinwiddie", type: "Science"}
+c6 = {name : "Books", bookName: "Not dreaming of you", price: "16", author: "Nina Cordoba ", type: "Romantic Comedy", description: "political journalist Mark Bennett confesses to his doctor he no longer finds anything exciting"}
+c7 = {name : "Books", bookName: "This time next door", author: "Gretchen Galway", type: "Romantic Comedy", description: "Romantic Comedy Bestseller"}
+c8 = {name : "Books", bookName: "Technology in action", ISBN: "X56Ht9", price: "139", type: "Technology", description: "Introductory courses in computer concepts, digital literacy, or computer literacy"}
+c9 = {name : "Books", bookName: "Michael Jordan The Life", price: "27", type: "Biographies & Memoirs", author: "Roland Lazenby"}
+c10 = {name : "Books", bookName: "Everybodys got something", price: "30", type: "Biographies & Memoirs",author: "Robin Roberts", description: "Regardless of how much money you have, your race, where you live everybody has got something"}
+
+
+db.Item.insert(c1)
+db.Item.insert(c2)
+db.Item.insert(c3)
+db.Item.insert(c4)
+db.Item.insert(c5)
+db.Item.insert(c6)
+db.Item.insert(c7)
+db.Item.insert(c8)
+db.Item.insert(c9)
+db.Item.insert(c10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+cd /home/roopa/node/nodetest1
+
+nmp start 
+
+sudo mongod --dbpath /home/roopa/node/nodetest1/data/
+
+use test
+
+db.Item.find()
+
+db.item.insert(.....)
+
+
+--------------------------------------------------------------------
+-Consistent hashing scenario type questions
+-Problems like rpm, disk etc
+-servers in different countries, 
+-SPOF
+-Off the shelf software
+-Sharding
+

@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    a(href="/")= "Back"
+    br
+    h1.
+        List of Products in category 'Fashion'
+
+    table
+      thead
+        tr
+         td
+          h4. Nail Polish
+          table(border="1")
+           thead
+             tr
+               td 
+                b= "Brand"
+               td
+                b= "Price in $"
+               td
+                b= "Quantity"
+               td
+                b= "Color"
+               td
+                b= "Description"
+           tbody
+            each user,i in itemlist2
+              if user.name=="Nail Polish"
+               tr
+                 td
+                   = user.brand 
+                 td
+                   = user.price
+                 td
+                   = user.quantity
+                 td
+                   = user.color
+                 td
+                   = user.description

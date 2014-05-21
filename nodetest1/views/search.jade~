@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    a(href="/")= "Back to home page"
+    br
+    br
+    h1= title
+    form#formSearchProduct(name="search",method="post",action="/searchProd")
+        input#inputProductName(type="text", name="productName")
+        button#btnSubmit(type="submit") search

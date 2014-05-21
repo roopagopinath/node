@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    img(src= "/images/online-shop.jpg")
+    p Welcome to #{title}
+    br
+    h4. To view a list of products, click on the categories below,
+    a(href="itemlist")= "Electronics"
+    br
+    br
+    a(href="itemlist2")= "Fashion"
+    br
+    br
+    a(href="itemlist3")= "Books"
+    br
+    br
+    h4. To search for products, click on the link below,
+    a(href="search")= "Search Products"
+                

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1.
+        User List
+
+    ul
+        each user,i in ulist
+            li
+                a(href="mailto:#{user.email}")= user.username	
+                br
+                a(href="mailto:#{user.email}")= user.email
+        each user,i in ulist2
+            li
+                a(href="mailto:#{user.email}")= user.username	
+                br
+                a(href="mailto:#{user.email}")= user.email			
+               
+
